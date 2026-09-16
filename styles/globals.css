@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f0f0f; color: #f1f1f1;
+}
+a { color: #3ea6ff; text-decoration: none; }
+button {
+  background: #3ea6ff; color: #0f0f0f; border: none;
+  padding: 10px 18px; border-radius: 6px; font-weight: 600;
+  cursor: pointer; font-size: 14px;
+}
+button:hover { background: #65b8ff; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+input, textarea {
+  background: #1f1f1f; color: #f1f1f1; border: 1px solid #333;
+  padding: 10px; border-radius: 6px; font-size: 14px;
+  font-family: inherit; width: 100%;
+}
+textarea { resize: vertical; }
+.container { max-width: 1400px; margin: 0 auto; padding: 24px; }
+.nav {
+  display: flex; gap: 8px; padding: 16px 24px;
+  background: #181818; border-bottom: 1px solid #272727;
+  position: sticky; top: 0; z-index: 10;
+}
+.nav a { padding: 8px 16px; border-radius: 6px; color: #f1f1f1; font-weight: 500; }
+.nav a.active { background: #272727; }
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px; margin-top: 20px;
+}
+.card { background: #181818; border-radius: 10px; overflow: hidden; border: 1px solid #272727; }
+.card-body { padding: 12px; }
+.card h4 {
+  margin: 0 0 8px; font-size: 15px; line-height: 1.3;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.meta { font-size: 13px; color: #aaa; }
+.stats { display: flex; gap: 16px; margin-top: 10px; font-size: 12px; color: #aaa; flex-wrap: wrap; }
+.stat-value { color: #f1f1f1; font-weight: 600; font-size: 14px; }
+.section { margin-top: 28px; }
+.section h2 { font-size: 18px; margin-bottom: 12px; }
+.score-card {
+  background: #181818; border: 1px solid #272727;
+  border-radius: 10px; padding: 20px;
+}
+.flex-row { display: flex; gap: 20px; flex-wrap: wrap; }
+.flex-row > * { flex: 1; min-width: 200px; }
+.error { color: #ff6b6b; margin-top: 12px; font-size: 14px; }
+.iframe-wrap { position: relative; padding-bottom: 56.25%; height: 0; }
+.iframe-wrap iframe {
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; border: 0;
+}
